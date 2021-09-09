@@ -7,28 +7,43 @@
 }
 
 body {
-    
-}
-
-header h1 {
-    font-family: sans-serif;
-    font-size: 100px;
-    color: teal;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:2%;
+}
+
+nav {
+    font-family: poppins;
+    font-size:18px;
+    color:#777777;
+    font-weight:500
+}
+
+nav a {
+    font-family: poppins;
+    font-size:18px;
+    font-weight:700;
+    color: #000000;
+    margin-right: 20px;
+    text-decoration:none;
+}
+
 .intro {
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:25%;
+    margin-right:25%;
+    
 }
 
 .intro h1 {
     font-family: poppins;
     font-size: 45px;
+    transition: 4s ease-in;
 }
 
 .intro h2 {

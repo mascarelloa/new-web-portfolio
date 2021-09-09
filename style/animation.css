@@ -5,7 +5,7 @@
     /* flex-direction:row;
     justify-content:flex-start; */
     background: #fff;
-    margin-top:200px;
+    margin-top:100px;
     /* background: -webkit-radial-gradient(#fff, #eaeaea); 
     background: -o-radial-gradient(#fff, #eaeaea); 
     background: -moz-radial-gradient(#fff, #eaeaea);
@@ -13,8 +13,8 @@
   }
   
   .hello-word {
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:25%;
+    margin-right:25%;
   }
   /* H Animation */
   
