@@ -8,41 +8,11 @@
 
 body {
   height: 100vh;
+  /* background: url(../assets/Desktop\ -\ 1.svg) */
 }
 
 .shapes img {
   position: absolute;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2%;
-}
-
-nav {
-  font-family: poppins;
-  font-size: 18px;
-  color: #777777;
-  font-weight: 500;
-}
-
-nav a,
-nav a:active,
-nav a:visited {
-  font-family: poppins;
-  font-size: 18px;
-  font-weight: 700;
-  color: #000000;
-  margin-right: 20px;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-}
-
-nav a:hover {
-  color: #81d8d0;
 }
 
 .intro {
@@ -63,8 +33,9 @@ nav a:hover {
 }
 
 .buttons {
-  margin-top: 25px;
+  margin-top: 50px;
 }
+
 .buttons a,
 .buttons a:active,
 .buttons a:visited {
@@ -84,17 +55,55 @@ nav a:hover {
   color: white;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2%;
+  margin-right:2%;
+  margin-top:1%;
+  background:transparent;
+  z-index:8;
+}
+
+/* nav {
+  font-family: poppins;
+  font-size: 18px;
+  color: #777777;
+  font-weight: 500;
+} */
+
+nav a,
+nav a:active,
+nav a:visited {
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #81d8d0;
+}
+
+/* ----styling for the hero---- */
+
 .hero {
-  background-image: url(../assets/Desktop\ -\ 1.svg);
+  /* background-image: url(../assets/Desktop\ -\ 1.svg);
   background-repeat: no-repeat;
   background-position-x: 285px;
-  background-position-y: -115px;
-  height: 100vh;
+  background-position-y: -115px; */
+  /* height: 100vh;
   width: 100%;
   overflow: hidden;
   -o-object-fit: cover;
-  object-fit: cover;
+  object-fit: cover; */
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -102,21 +111,160 @@ nav a:hover {
   align-items: space-around;
 }
 
-section {
-  /* position: absolute; */
-  /* height: 100vh; */
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.intro {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-section img {
-  position: absolute;
+.intro h1 {
+  font-family: poppins;
+  font-size: 50px;
+  transition: 4s ease-in;
+}
+
+.intro h2 {
+  font-family: poppins;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.buttons a,
+.buttons a:active,
+.buttons a:visited {
+  font-family: poppins;
+  font-size: 18px;
+  color: #ff5851;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  border: solid 5px #ff5851;
+  transition: 0.3s ease-in-out;
+}
+
+.buttons a:hover {
+  background-color: #ff5851;
+  color: white;
+}
+
+/* ----styling for the hamburger menu---- */
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #febbbb 0%,
+    #fe9090 45%,
+    #ff5c5c 100%
+  );
+  background: linear-gradient(to bottom, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+}
+
+.toggle-button {
+  position: fixed;
+  top: 10px;
+  /*horizontal centering: https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/ */
+  right: 10px;
+  padding: 9px 10px;
+  margin: 8px 15px 8px 0;
+  height: 20px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.bar {
+  background-color: white;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.bar + .bar {
+  margin-top: 4px;
+}
+
+.middle {
+  top: 15px;
+}
+
+.bottom {
+  top: 30px;
+}
+
+.toggle-button:hover {
+  opacity: 0.7;
+}
+
+.toggle-active .bar {
+  background-color: #fff;
+}
+
+.toggle-active .top {
+  -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+}
+
+.toggle-active .middle {
+  opacity: 0;
+}
+
+.toggle-active .bottom {
+  -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+}
+
+/** styling for the overlay. The sliding-down effect of the overlay is given by the initial zero height and the onclick 100% height. **/
+
+.overlay {
+  position: fixed;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
   top: 0;
-  left: 200;
-  /* width: 100%;
-    height: 100%;
-    object-fit: cover; */
+  left: 0;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+}
+
+/* class added to the overlay on click*/
+
+.nav-active {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.overlay ul {
+  display: block;
+  position: relative;
+  top: 60px;
+  left: 0;
+  font-family: "Didact Gothic", serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.overlay ul li {
+  display: block;
+}
+
+.overlay ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hidden {
+  opacity: 0;
 }
