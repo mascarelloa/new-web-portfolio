@@ -113,6 +113,7 @@ nav a:hover {
   overflow: hidden;
   -o-object-fit: cover;
   object-fit: cover; */
+  height: 100vh;
 }
 
 .hero-content {
