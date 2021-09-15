@@ -3,11 +3,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
-  height: 100vh;
+min-height:100vh;
+  scroll-behavior: smooth;
   /* background: url(../assets/Desktop\ -\ 1.svg) */
 }
 
@@ -23,12 +24,11 @@ body {
 .intro h1 {
   font-family: poppins;
   font-size: 50px;
-  transition: 4s ease-in;
 }
 
 .intro h2 {
   font-family: poppins;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 400;
 }
 
@@ -104,64 +104,21 @@ nav a:hover {
 /* ----styling for the hero---- */
 
 .hero {
-  /* background-image: url(../assets/Desktop\ -\ 1.svg);
-  background-repeat: no-repeat;
-  background-position-x: 285px;
-  background-position-y: -115px; */
-  /* height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  -o-object-fit: cover;
-  object-fit: cover; */
-  height: 100vh;
+    min-height:100vh;
 }
+
 
 .hero-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: space-around;
+  margin-bottom:100px;
+  /* align-items: space-around; */
+  
+  
+  
 }
 
-.intro {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.intro h1 {
-  font-family: poppins;
-  font-size: 50px;
-  transition: 4s ease-in;
-}
-
-.intro h2 {
-  font-family: poppins;
-  font-size: 40px;
-  font-weight: 400;
-}
-
-.buttons {
-  margin-top: 50px;
-}
-
-.buttons a,
-.buttons a:active,
-.buttons a:visited {
-  font-family: poppins;
-  font-size: 18px;
-  color: #ff5851;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px;
-  border: solid 5px #ff5851;
-  transition: 0.3s ease-in-out;
-}
-
-.buttons a:hover {
-  background-color: #ff5851;
-  color: white;
-}
 
 /* ----styling for the hamburger menu---- */
 
@@ -283,8 +240,7 @@ nav a:hover {
 
 
 .skills {
-    
-    height: 100vh;
+position: relative;
     padding:3%;
 }
 
@@ -300,7 +256,7 @@ nav a:hover {
     height: 350px;
     margin:25px;
     padding:10px;
-    background-color:#81d8d0;
+    background-color:white;
     box-shadow: 0 0 20px rgb(204, 204, 204);
     border-radius: 20px;
     transition: 2s ease-in;
@@ -308,6 +264,7 @@ nav a:hover {
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    
 
 }
 
@@ -315,7 +272,16 @@ nav a:hover {
     font-family: poppins;
     font-weight:600;
     font-size: 30px;
-    color:white;
+    color:#81d8d0;
     /* text-transform:uppercase; */
 }
 
+
+
+.projects {
+    height:auto;
+}
+
+.project-card {
+    height:300px;
+}
