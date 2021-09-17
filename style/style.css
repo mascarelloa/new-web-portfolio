@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Monoton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 
 * {
   margin: 0;
@@ -257,29 +259,48 @@ position: relative;
     margin:25px;
     padding:10px;
     background-color:white;
-    box-shadow: 0 0 20px rgb(204, 204, 204);
+    /* box-shadow: 0 0 20px rgb(204, 204, 204); */
     border-radius: 20px;
     transition: 2s ease-in;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    text-align:center;
+    align-items: center;
     
 
 }
 
 .what-card h1 {
     font-family: poppins;
-    font-weight:600;
-    font-size: 30px;
-    color:#81d8d0;
+    font-weight:700;
+    font-size: 25px;
+    color:black;
+    margin-top:25px;
+    margin-bottom:25px;
+
     /* text-transform:uppercase; */
 }
 
+.what-card p {
+  font-family: roboto;
+  font-weight:400;
+  font-size: 18px;
+  color:#000000;
+  letter-spacing:1px;
+  line-height:25px;
+  width:295px;
 
+  /* text-transform:uppercase; */
+}
+
+.what-icon {
+    color:#81d8d0;
+    margin-bottom:15px;
+}
 
 .projects {
     height:auto;
+
 }
 
 .project-card {
