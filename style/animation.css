@@ -3,16 +3,12 @@
   /* flex-direction:row;
     justify-content:flex-start; */
   background: transparent;
-  margin-top: 100px;
-  /* background: -webkit-radial-gradient(#fff, #eaeaea); 
-    background: -o-radial-gradient(#fff, #eaeaea); 
-    background: -moz-radial-gradient(#fff, #eaeaea);
-    background: radial-gradient(#fff, #eaeaea);  */
+  margin-top: 75px;
 }
 
 .hello-word {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 /* H Animation */
 

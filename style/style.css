@@ -14,81 +14,6 @@ min-height:100vh;
   
 }
 
-
- /* #parallax {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/arrows.png),
-    url(../assets/circle.png),
-    url(../assets/cross.png),
-    url(../assets/sidetri.png),
-    url(../assets/square.png),
-    url(../assets/uptri.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  
-  
-}  */
-
-
-
-
-.intro {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top:150px;
-
-}
-
-.intro h3 {
-  font-family: poppins;
-  font-size:180px;
-  line-height:150px;
-  color:#81d8d0;
-  text-transform:uppercase;
-  margin-bottom:15px;
-}
-
-.intro span {
-  color:#ff5851;
-  font-size:200px;
-}
-
-.intro h1 {
-  font-family: poppins;
-  font-size: 50px;
-}
-
-.intro h2 {
-  font-family: poppins;
-  font-size: 35px;
-  font-weight: 400;
-}
-
-.buttons {
-  margin-top: 50px;
-}
-
-.buttons a,
-.buttons a:active,
-.buttons a:visited {
-  font-family: poppins;
-  font-size: 18px;
-  color: #ff5851;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px;
-  border: solid 4px #ff5851;
-  transition: 0.3s ease-in-out;
-}
-
-.buttons a:hover {
-  background-color: #ff5851;
-  color: white;
-}
-
 header {
   display: flex;
   flex-direction: row;
@@ -96,6 +21,7 @@ header {
   align-items: center;
   margin-left: 2%;
   margin-right:2%;
+  padding-top:1%;
   /* margin-top:1%; */
   background:transparent;
   z-index:8;
@@ -135,13 +61,34 @@ nav a:hover {
   color: #81d8d0;
 }
 
+ /* #parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/arrows.png),
+    url(../assets/circle.png),
+    url(../assets/cross.png),
+    url(../assets/sidetri.png),
+    url(../assets/square.png),
+    url(../assets/uptri.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  
+  
+}  */
+
+
+
+
+
 /* ----styling for the hero---- */
 
 .hero {
     min-height:100vh;
-    background-image: url(../assets/geobg.png);
-    background-repeat: no-repeat;
-    background-position:right;
+    background-image: url(../assets/lightgeo.png);
+    
+    background-position:left;
+    background-position:bottom;
 
     /* background-color:black; */
 }
@@ -150,13 +97,53 @@ nav a:hover {
 .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-bottom:100px;
+  /* justify-content: flex-start; */
+  /* margin-bottom:100px; */
   /* align-items: space-around; */
   
-  
-  
 }
+
+.intro {
+  margin-left: 12%;
+  margin-right: 12%;
+  /* margin-top:150px; */
+
+}
+
+.intro h1 {
+  font-family: poppins;
+  font-size: 50px;
+}
+
+.intro h2 {
+  font-family: poppins;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.buttons a,
+.buttons a:active,
+.buttons a:visited {
+  font-family: poppins;
+  font-size: 18px;
+  color: #ff5851;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  border: solid 4px #ff5851;
+  transition: 0.3s ease-in-out;
+}
+
+.buttons a:hover {
+  background-color: #ff5851;
+  color: white;
+}
+
 
 
 /* ----styling for the hamburger menu---- */
