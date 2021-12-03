@@ -98,7 +98,7 @@ nav a:hover {
 .hero {
     min-height:100vh;
     background-image: url(../assets/lightgeo.png);
-    
+    /* background-color:#999999; */
     background-position:left;
     background-position:bottom;
 
@@ -276,18 +276,28 @@ nav a:hover {
   opacity: 0;
 }
 
-
+/* ----styling for the skills section---- */
 .skills {
 position: relative;
-    /* padding:3%; */
+/* background-color:#777777; */
 }
 
 .what {
+  /* background-color:#999999; */
+}
+
+
+
+.what-content {
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-between;
+    justify-content:space-around;
+    /* background-color:#888888; */
+    margin-top:100px;
+    margin-bottom: 200px;
 }
+
 
 .what-card {
     width:300px;
@@ -335,11 +345,69 @@ position: relative;
 }
 
 
+
+
 .how {
+  /* background-color:#999999; */
+}
+
+h3{
+  font-family: poppins;
+    font-weight:700;
+    font-size: 60px;
+    color:#81d8d0;
+    margin-bottom:75px;
+    text-align:center;
+    text-transform:uppercase;
+} 
+
+.how-content {
  display:flex;
  flex-direction:row;
  flex-wrap:wrap;
  justify-content:space-around;
+ margin-top:100px;
+margin-bottom: 200px;
+ /* background-color:#999999; */
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns:auto auto auto auto auto auto;
+  text-align:center;
+  padding: 10px;
+grid-gap:75px;
+grid-auto-columns:300px;
+}
+
+
+.tool { 
+  transition: 0.3s ease-in-out;
+}
+
+.how i:hover {
+color:#ff5851;
+
+}
+.tool h2{
+  font-family: poppins;
+    font-weight:400;
+    font-size: 22px;
+    color:#aaaaaa;
+    margin-top:25px;
+    margin-bottom:25px;
+
+}
+
+
+
+
+.how i {
+  font-size: 75px;
+  color:#000000;
+  /* width:80px; */
+  padding:20px;
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -352,4 +420,46 @@ position: relative;
 
 .project-card {
     height:300px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1190px){
+  .tool-grid {
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    text-align:center;
+    padding: 10px;
+  grid-gap:75px;
+  grid-auto-columns:300px;
+  }
+
+}
+
+@media only screen and (max-width: 815px){
+  .tool-grid {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    text-align:center;
+    padding: 10px;
+  grid-gap:75px;
+  grid-auto-columns:300px;
+  }
+
+}
+
+
+
+@media only screen and (max-width:560px){
+  .tool-grid {
+    display: grid;
+    grid-template-columns:auto auto;
+    text-align:center;
+    padding: 10px;
+  grid-gap:75px;
+  grid-auto-columns:300px;
+  }
+
 }
