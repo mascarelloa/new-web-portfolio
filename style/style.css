@@ -26,10 +26,12 @@ section {
 }
 
 
-header {
+header { 
+  width:100%;
   display: flex;
+ 
   flex-direction: row;
-  justify-content: space-between;
+    justify-content: space-between;
   align-items: center;
   /* margin-left: 2%;
   margin-right:2%; */
@@ -37,6 +39,25 @@ header {
   /* margin-top:1%; */
   background:transparent;
   z-index:8;
+  position: fixed;
+}
+
+.right-side{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.view {
+  padding-left:20px;
+  font-size:20px;
+  padding-top:6px;
+}
+
+#light-mode {
+font-size:25px;
+
 }
 
 .logo svg {
@@ -160,145 +181,102 @@ nav a:hover {
 }
 
 
-.scrolly {
+
+.scrolly { 
+  font-size:20px;
+  font-family:poppins;
+  font-weight:700;
+  text-transform: uppercase;
+  letter-spacing:1px;
   display:block;
-  position:absolute;
-  transform:rotate(90deg);
-  font-family: poppins;
-  font-size: 20px;
+position:absolute;
+transform:rotate(90deg);
+bottom:90px;
+
+}
+
+
+/* Burger Menu Styling */
+
+
+/* OPEN / CLOSE BTNS */
+
+.menu-btn {
+  /* position: absolute; */
+  top: 6px;
+  right: 20px;
+  z-index: 999;
+  /* display: inline; */
+  font-size: 32px;
+}
+
+.menu-btn a {
+  /* display: inline-block; */
+  text-decoration: none;
+  /* safari hack */
+  
+  justify-content:center;
+  align-items:center;
+}
+
+.btn-open:after {
+  color: 81d8d0;
+  font-family: "poppins";
+  content: "Menu";
+  font-size:20px;
   font-weight:700;
   text-transform:uppercase;
-  letter-spacing:1px;
 
-  bottom:80px;
-  
+  -webkit-transition: all .2s linear 0s;
+  -moz-transition: all .2s linear 0s;
+  -o-transition: all .2s linear 0s;
+  transition-property: all .2s linear 0s;
+}
+
+.btn-open:hover:after {
+  color: #81d8d0;
+}
+
+.btn-close:after {
+  color: #000000;
+  font-family: "poppins";
+  content: "Close";
+  font-size:20px;
+  font-weight:700;
+  text-transform:uppercase;
+  -webkit-transition: all .2s linear 0s;
+  -moz-transition: all .2s linear 0s;
+  -o-transition: all .2s linear 0s;
+  transition-property: all .2s linear 0s;
+}
+
+.btn-close:hover:after {
+  color: #ff5851;
 }
 
 
-
-
-/* ----styling for the hamburger menu---- */
-
-.container {
-  height: 100vh;
-  width: 100%;
-  background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
-  background: -webkit-linear-gradient(
-    top,
-    #febbbb 0%,
-    #fe9090 45%,
-    #ff5c5c 100%
-  );
-  background: linear-gradient(to bottom, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
-}
-
-.toggle-button {
-  position: fixed;
-  top: 10px;
-  /*horizontal centering: https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/ */
-  right: 10px;
-  padding: 9px 10px;
-  margin: 8px 15px 8px 0;
-  height: 20px;
-  width: 35px;
-  cursor: pointer;
-  z-index: 3;
-}
-
-.bar {
-  background-color: white;
-  display: block;
-  width: 100%;
-  height: 5px;
-  border: 0;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-
-.bar + .bar {
-  margin-top: 4px;
-}
-
-.middle {
-  top: 15px;
-}
-
-.bottom {
-  top: 30px;
-}
-
-.toggle-button:hover {
-  opacity: 0.7;
-}
-
-.toggle-active .bar {
-  background-color: #fff;
-}
-
-.toggle-active .top {
-  -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
-}
-
-.toggle-active .middle {
-  opacity: 0;
-}
-
-.toggle-active .bottom {
-  -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
-}
-
-/** styling for the overlay. The sliding-down effect of the overlay is given by the initial zero height and the onclick 100% height. **/
+/* OVERLAY */
 
 .overlay {
   position: fixed;
-  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  /* display:block; */
   top: 0;
-  left: 0;
+  z-index: 99;
+  display: none;
+  overflow: auto;
   width: 100%;
-  height: 0;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-}
-
-/* class added to the overlay on click*/
-
-.nav-active {
-  opacity: 1;
-  visibility: visible;
   height: 100%;
+  background: #81d8d0;
 }
 
-.overlay ul {
-  display: block;
-  position: relative;
-  top: 60px;
-  left: 0;
-  font-family: "Didact Gothic", serif;
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-  list-style: none;
-  padding: 0;
-}
 
-.overlay ul li {
-  display: block;
-}
 
-.overlay ul li a {
-  color: #fff;
-  text-decoration: none;
-}
 
-.hidden {
-  opacity: 0;
-}
 
 /* ----styling for the skills section---- */
 .skills {
 position: relative;
-background-color:#f5f5f5;
+/* background-color:#81d8d0; */
 }
 
 .what {
@@ -359,7 +337,7 @@ background-color:#f5f5f5;
 }
 
 .what-icon {
-    color:#81d8d0;
+    color:#black;
     /* margin-bottom:0px; */
 }
 
@@ -378,7 +356,11 @@ h3{
     margin-bottom:75px;
     text-align:center;
     text-transform:uppercase;
+    /* border-bottom: 10px solid #81d8d0;
+    display:inline; */
 } 
+
+
 
 .how-content {
  display:flex;
