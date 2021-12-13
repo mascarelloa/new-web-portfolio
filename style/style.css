@@ -47,6 +47,7 @@ header {
   flex-direction:row;
   justify-content:space-between;
   align-items:center;
+  margin-right:50px;
 }
 
 .view {
@@ -63,6 +64,7 @@ font-size:25px;
 .logo svg {
     fill:black;
     transition: .3s ease-in-out;
+    margin-left:25px;
 }
 
 .logo svg:hover {
@@ -182,7 +184,7 @@ nav a:hover {
 
 
 
-.scrolly { 
+/* .scrolly { 
   font-size:20px;
   font-family:poppins;
   font-weight:700;
@@ -192,8 +194,9 @@ nav a:hover {
 position:absolute;
 transform:rotate(90deg);
 bottom:90px;
+margin-right:20px;
 
-}
+} */
 
 
 /* Burger Menu Styling */
