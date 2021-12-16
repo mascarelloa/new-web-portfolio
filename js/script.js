@@ -1,5 +1,7 @@
 // $(document).ready(function () {
 
+// const { HostNotReachableError } = require("sequelize/types");
+
 //     $(".menu-btn a").click(function () {
 //         $(".overlay").fadeToggle(200);
 //         $(this).toggleClass('btn-open').toggleClass('btn-close');
@@ -17,27 +19,17 @@
 
 // });
 
+window.onscroll = function () {
+  fixedHeader();
+};
 
-window.onscroll = function() {
-    fixedHeader();
-}
+const header = document.querySelector(".fixed-header");
 
-var header = document.getElementById("fixed-header");
-var logo = document.getElementById("logo")
-var sticky = header.offsetTop;
-
-
-function fixedHeader(){
-    logo.style.color = "white";
-
-   if (window.pageYOffset > sticky) {
-  header.classList.add("sticky");
-  
-  
-} else {
-    header.classList.remove("sticky");
-   
-}
-
-
+function fixedHeader() {
+  var top = window.scrollY;
+  if (top >= 75) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
 }
