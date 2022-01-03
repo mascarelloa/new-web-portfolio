@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --main-teal: #81D8D0;
-  --main-red: #FF5851;
+  --main-teal: #81d8d0;
+  --main-red: #ff5851;
 }
-
 
 /* ----global styling---- */
 * {
@@ -27,7 +26,6 @@ section {
   padding-right: 10%;
 }
 
-
 h3 {
   font-family: poppins;
   font-weight: 700;
@@ -39,7 +37,6 @@ h3 {
   /* border-bottom: 10px solid #81d8d0;
     display:inline; */
 }
-
 
 /* ----styling for the header/navigation---- */
 
@@ -55,7 +52,6 @@ header {
   z-index: 8;
   position: fixed;
   transition: 0.3s ease-in-out;
-  
 }
 
 .right-side {
@@ -84,7 +80,7 @@ header {
 
 .logo svg:hover {
   color: var(--main-red);
-  fill:var(--main-red);
+  fill: var(--main-red);
   cursor: pointer;
 }
 
@@ -113,30 +109,23 @@ nav a:hover {
   color: #81d8d0;
 }
 
-
 header.active {
-  
   /* background:#ffffff; */
   backdrop-filter: blur(10px);
-  -webkit-box-shadow:0px 1px 1px #dbdbdb;
- -moz-box-shadow:0px 1px 1px #dbdbdb;
- box-shadow:0px 5px 20px -5px #eeeeee;
-
+  -webkit-box-shadow: 0px 1px 1px #dbdbdb;
+  -moz-box-shadow: 0px 1px 1px #dbdbdb;
+  box-shadow: 0px 5px 20px -5px #eeeeee;
 }
 
 nav a.active {
-  color:#FBFBFB;
+  color: #fbfbfb;
 }
-
-
-
 
 /* ----styling for the hero section---- */
 
-
 .hero {
   min-height: 100vh;
-  height:100%;
+  height: 100%;
   background-image: url(../assets/lightgeo.png);
   /* background-color:#999999; */
   background-position: left;
@@ -193,22 +182,20 @@ nav a.active {
   color: white;
 }
 
-.scrolly { 
-  font-size:20px;
-  font-family:poppins;
-  font-weight:700;
+.scrolly {
+  font-size: 20px;
+  font-family: poppins;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing:1px;
-  display:block;
-position:absolute;
-transform:rotate(90deg);
-bottom:90px;
-margin-right:20px;
-
+  letter-spacing: 1px;
+  display: block;
+  position: absolute;
+  transform: rotate(90deg);
+  bottom: 90px;
+  margin-right: 20px;
 }
 
 /* ----styling for the overlay menu--- */
-
 
 .menu-btn {
   /* position: absolute; */
@@ -242,7 +229,7 @@ margin-right:20px;
 }
 
 .btn-open:hover:after {
-  color: var(--main-teal)
+  color: var(--main-teal);
 }
 
 .btn-close:after {
@@ -274,7 +261,6 @@ margin-right:20px;
   background: var(--main-teal);
 }
 
-
 /* ----styling for the hero section---- */
 
 .about {
@@ -286,12 +272,10 @@ margin-right:20px;
 .about-content {
   display: flex;
   flex-direction: row;
-  justify-content:center;
-  align-items:center;
-  margin-bottom:150px;
-
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
 }
-
 
 .about-content p {
   font-family: sans-serif;
@@ -304,21 +288,18 @@ margin-right:20px;
 }
 
 .desc {
-  width:475px;
+  width: 475px;
 }
 .about-content img {
-  max-width:400px;
+  max-width: 400px;
+  filter: grayscale();
 }
 
 /* ----styling for the skills/tools section---- */
 
-
 .skills {
   position: relative;
-  
- 
 }
-
 
 .skills-content {
   display: flex;
@@ -368,18 +349,17 @@ margin-right:20px;
 }
 
 .tool-marquee {
-  position:relative;
-  font-family:poppins;
-  font-size:75px;
-  font-weight:700;
-  text-transform:uppercase;
-  color:var(--main-teal);
+  position: relative;
+  font-family: poppins;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-teal);
   /* background:black;   */
   overflow-x: hidden;
   width: 100vw;
   max-width: 100%;
   height: 115px;
-
 }
 
 .track {
@@ -390,11 +370,13 @@ margin-right:20px;
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
-
-
 
 /* ---- Responsive Styling ---- */
 
@@ -406,6 +388,21 @@ margin-right:20px;
     padding: 10px;
     grid-gap: 75px;
     grid-auto-columns: 300px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about-content {
+    flex-direction:column;
+    justify-content:center;
+  }
+  .desc {
+    text-align:justify;
+    margin-bottom:50px;
+    width:90%;
+  }
+  .desc .hero-button {
+    text-align:center;
   }
 }
 
