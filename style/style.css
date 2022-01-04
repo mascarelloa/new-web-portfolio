@@ -40,6 +40,12 @@ h3 {
     display:inline; */
 }
 
+.hire-me {
+  position:fixed;
+  right:20px;
+  bottom:20px;
+}
+
 /* ----styling for the header/navigation---- */
 
 header {
@@ -341,7 +347,7 @@ nav a.active {
   font-family: sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #9b9b9b;
+  color: rgb(95, 95, 95);
   letter-spacing: 1px;
   line-height: 25px;
   width: 295px;
@@ -351,7 +357,7 @@ nav a.active {
   color: black;
   /* margin-bottom:0px; */
 }
-
+/* 
 .tool-marquee {
   position: relative;
   font-family: poppins;
@@ -359,7 +365,6 @@ nav a.active {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--main-teal);
-  /* background:black;   */
   overflow-x: hidden;
   width: 100vw;
   max-width: 100%;
@@ -380,7 +385,7 @@ nav a.active {
   to {
     transform: translateX(-50%);
   }
-}
+} */
 
 /* #filter-container {
   text-align:center;
@@ -449,6 +454,20 @@ border-bottom: 3px solid var(--main-coral);
   color: white;
   cursor: default;
 }
+
+
+
+
+footer {
+  font-family:sans-serif;
+  font-size:14px;
+  color:rgb(197, 197, 197);
+  padding:25px;
+  letter-spacing:.5px;
+}
+
+
+
 
 /* ---- Responsive Styling ---- */
 
