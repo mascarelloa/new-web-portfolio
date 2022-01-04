@@ -2,7 +2,9 @@
 
 :root {
   --main-teal: #81d8d0;
-  --main-red: #ff5851;
+  --main-coral: #ff8981;
+  --alt-red: #ff8981;
+  --light-gray: #f9f9f9;
 }
 
 /* ----global styling---- */
@@ -79,8 +81,8 @@ header {
 }
 
 .logo svg:hover {
-  color: var(--main-red);
-  fill: var(--main-red);
+  color: var(--main-coral);
+  fill: var(--main-coral);
   cursor: pointer;
 }
 
@@ -167,18 +169,18 @@ nav a.active {
 .hero-button a:visited {
   font-family: poppins;
   font-size: 18px;
-  color: var(--main-red);
+  color: var(--main-coral);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
   padding: 10px;
-  border: solid 4px var(--main-red);
+  border: solid 4px var(--main-coral);
   transition: 0.3s ease-in-out;
 }
 
 .hero-button a:hover {
-  background-color: var(--main-red);
+  background-color: var(--main-coral);
   color: white;
 }
 
@@ -246,7 +248,7 @@ nav a.active {
 }
 
 .btn-close:hover:after {
-  color: var(--main-red);
+  color: var(--main-coral);
 }
 
 .overlay {
@@ -279,16 +281,17 @@ nav a.active {
 
 .about-content p {
   font-family: sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #9b9b9b;
+  /* font-weight: 500; */
+  font-size: 18px;
+  color: rgb(95, 95, 95);
   letter-spacing: 1px;
-  line-height: 25px;
+  line-height: 30px;
   /* width: 295px; */
 }
 
 .desc {
-  width: 475px;
+  width: 400px;
+  margin-right: 20px;
 }
 .about-content img {
   max-width: 400px;
@@ -307,7 +310,7 @@ nav a.active {
   flex-wrap: wrap;
   justify-content: space-around;
   /* margin-top: 100px; */
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .skill-card {
   width: 300px;
@@ -324,13 +327,14 @@ nav a.active {
   justify-content: center;
 }
 
-.skill-card h1 {
+.skills h1 {
   font-family: poppins;
   font-weight: 700;
   font-size: 25px;
   color: black;
   margin-top: 25px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .skill-card p {
@@ -378,6 +382,74 @@ nav a.active {
   }
 }
 
+/* #filter-container {
+  text-align:center;
+}
+
+#filter-container h1 {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 25px;
+  color:var(--main-teal);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  
+}
+
+
+.filter {
+  font-family: poppins;
+  font-size:20px;
+  font-weight:700;
+  color:black;
+  transition: .3 ease-in-out;
+  display:inline;
+  margin-left:6px;
+  margin-right:6px;
+  
+}
+
+.filter:hover {
+color:var(--main-coral)
+}
+
+.filter.active{
+color:var(--main-coral);
+border-bottom: 3px solid var(--main-coral);
+} */
+
+.tech-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.technology {
+  padding: 12px 14px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: var(--main-teal);
+  color: white;
+  transition: 0.3s ease-in-out;
+  /* display: none; */
+}
+
+.technology:hover {
+  background-color: var(--main-coral);
+  color: white;
+  cursor: default;
+}
+
 /* ---- Responsive Styling ---- */
 
 @media only screen and (max-width: 1190px) {
@@ -393,16 +465,16 @@ nav a.active {
 
 @media only screen and (max-width: 900px) {
   .about-content {
-    flex-direction:column;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
   }
   .desc {
-    text-align:justify;
-    margin-bottom:50px;
-    width:90%;
+    text-align: justify;
+    margin-bottom: 50px;
+    width: 90%;
   }
   .desc .hero-button {
-    text-align:center;
+    text-align: center;
   }
 }
 
