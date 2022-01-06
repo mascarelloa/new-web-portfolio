@@ -38,6 +38,12 @@ function fixedHeader() {
 }
 
 
+
+
+
+
+
+
 // //Filter technologies by category. 
 
 // filterSelection("all")
