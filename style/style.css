@@ -643,8 +643,9 @@ color:var(--main-teal);
   max-width:300px;
   height:250px;
   background-color:white;
-  box-shadow: 0 0 20px rgb(230, 230, 230);
-  border-radius:4px;
+  /* box-shadow: 0 0 20px rgb(230, 230, 230); */
+  border: 1px solid #e2e2e2;
+  border-radius:8px;
   padding:25px;
   margin-right:15px;
   margin-left:15px;
