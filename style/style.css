@@ -68,6 +68,54 @@ h4 {
   height:80px;
 }
 
+
+
+/* ---- Hover Descriptions Styling ---- */
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--main-coral);
+  color: #fff;
+  font-family: open sans;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--main-coral) transparent transparent transparent;  
+
+  
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+
 /* ---- Fixed Hire Me Button Styling ---- */
 
 .hire-me a {
@@ -432,12 +480,12 @@ border-bottom: 3px solid var(--main-coral);
 }
 
 .technology {
-  padding: 12px 14px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  padding: 8px 10px;
+  margin-right: 18px;
+  margin-bottom: 18px;
   border-radius: 8px;
   font-family: open sans;
-  font-size: 18px;
+  font-size: 16px;
   background-color: var(--main-teal);
   color: white;
   transition: 0.3s ease-in-out;
