@@ -888,10 +888,27 @@ footer {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .intro h1 {
+    font-size:40px;
+  }
+
+  .intro h2 {
+    font-size:25px;
+  }
+}
+
 
 @media only screen and (max-width: 680px) {
   .hire-me {
     display: none;
+  }
+  .intro h1 {
+    font-size:30px;
+  }
+
+  .intro h2 {
+    font-size:20px;
   }
 }
 
