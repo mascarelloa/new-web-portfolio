@@ -1,24 +1,14 @@
-// $(document).ready(function () {
-
-// const { HostNotReachableError } = require("sequelize/types");
-
-//     $(".menu-btn a").click(function () {
-//         $(".overlay").fadeToggle(200);
-//         $(this).toggleClass('btn-open').toggleClass('btn-close');
-//     });
-
-//     $('.overlay').on('click', function () {
-//         $(".overlay").fadeToggle(200);
-//         $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-//     });
-
-//     $('.menu a').on('click', function () {
-//         $(".overlay").fadeToggle(200);
-//         $(".menu-btn a").toggleClass('btn-open').toggleClass('btn-close');
-//     });
-
+function toggleMenu() {
+  $("#hamburgerMenu").toggleClass("collapsed");  
+  $(".aa-mobile-overlay").animate({
+        height: "toggle",
+        opacity: "toggle"
+    }, 300);
+}
+// $(".aa-mobile-overlay").on('click', function() {
+//   $("#hamburgerMenu").toggleClass("collapsed"); 
+//   $(".aa-mobile-overlay").fadeToggle(200);
 // });
-
 
 
 // Fix header on scroll and apply active class.
@@ -26,7 +16,7 @@ window.onscroll = function () {
   fixedHeader();
 };
 
-const header = document.querySelector(".fixed-header");
+const header = document.querySelector(".aa-nav");
 
 function fixedHeader() {
   var top = window.scrollY;
