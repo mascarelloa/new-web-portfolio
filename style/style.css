@@ -359,7 +359,7 @@ header.active {
   left: 0;
 	height: 100%;
 	width: 100%;
-	background: transparent;
+	/* background: var(--main-teal); */
   backdrop-filter: blur(10px);
 	overflow: auto;
 	z-index: 99;
@@ -387,6 +387,7 @@ header.active {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  transition: 0.3s ease-in-out;
 }
 
 .aa-mobile-nav-items > li > a:hover {
