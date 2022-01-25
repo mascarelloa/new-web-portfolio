@@ -1045,3 +1045,13 @@ h5 {
     background:white;
 
 }
+
+.project-info a {
+  font-size:14px;
+}
+
+.project-info .view {
+  font-size:16px;
+}
+
+}
