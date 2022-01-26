@@ -1011,6 +1011,11 @@ footer {
    
   }
 
+  .aa-mobile-overlay {
+    background:white;
+
+}
+
   .archive-card a {
 font-size:16px;
 }
@@ -1041,10 +1046,7 @@ h5 {
     display:none;
   }
 
-  .aa-mobile-overlay {
-    background:white;
 
-}
 
 .project-info a {
   font-size:14px;
